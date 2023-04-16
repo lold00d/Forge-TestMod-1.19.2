@@ -1,4 +1,6 @@
 {
   "item.animod.zircon": "Zircon",
-  "item.animod.raw_zircon": "Raw Zircon"
+  "item.animod.raw_zircon": "Raw Zircon",
+
+  "itemGroup.animod_tab" : "AniMod Tab"
 }
