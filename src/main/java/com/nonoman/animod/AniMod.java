@@ -1,6 +1,7 @@
 package com.nonoman.animod;
 
 import com.mojang.logging.LogUtils;
+import com.nonoman.animod.block.ModBlocks;
 import com.nonoman.animod.item.ModCreativeModeTab;
 import com.nonoman.animod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,6 +28,7 @@ public class AniMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,6 +45,10 @@ public class AniMod
         if(event.getTab() == ModCreativeModeTab.ANIMOD_TAB) {
             event.accept(ModItems.ZIRCON);
             event.accept(ModItems.RAW_ZIRCON);
+
+            event.accept(ModBlocks.ZIRCON_BLOCK);
+            event.accept(ModBlocks.ZIRCON_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE);
         }
     }
 

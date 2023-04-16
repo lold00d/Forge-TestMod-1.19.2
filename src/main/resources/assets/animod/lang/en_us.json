@@ -2,5 +2,9 @@
   "item.animod.zircon": "Zircon",
   "item.animod.raw_zircon": "Raw Zircon",
 
+  "block.animod.zircon_block": "Zircon Block",
+  "block.animod.zircon_ore": "Zircon Ore",
+  "block.animod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
   "itemGroup.animod_tab" : "AniMod Tab"
 }
